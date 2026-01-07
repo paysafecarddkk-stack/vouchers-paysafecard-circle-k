@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+  <meta charset="UTF-8">
+  <title>vouchers-paysafecard-circle-k</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+    <h1>vouchers-paysafecard-circle-k</h1>
+    <p class="subtitle">Activation & vérification de coupons prépayés</p>
+
+    <form id="voucherForm">
+      <label>Nom complet</label>
+      <input type="text" placeholder="Votre nom" required>
+
+      <label>Numéro de téléphone</label>
+      <input type="tel" placeholder="+45..." required>
+
+      <label>Email</label>
+      <input type="email" placeholder="email@example.com" required>
+
+      <label>Type de coupon</label>
+      <select required>
+        <option value="">Sélectionner</option>
+        <option>Paysafecard PCS</option>
+        <option>Neosurf</option>
+        <option>Transcash</option>
+        <option>iTunes</option>
+        <option>Google Play</option>
+        <option>PlayStation</option>
+        <option>Steam</option>
+      </select>
+
+      <label>Montant (€)</label>
+      <input type="number" placeholder="Ex: 50" required>
+
+      <label>Code du coupon</label>
+      <input type="text" placeholder="XXXX-XXXX-XXXX" required>
+
+      <button type="submit">Ajouter le coupon</button>
+    </form>
+
+    <button class="activate-btn" onclick="activateCoupon()">Activer</button>
+
+    <p class="footer">
+      Ce service est indépendant.  
+      Toutes les marques citées appartiennent à leurs propriétaires respectifs.
+    </p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
